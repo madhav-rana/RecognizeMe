@@ -1,0 +1,28 @@
+.DS_Store
+dst/
+
+# Virtual Environment
+.venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Streamlit Secrets
+.streamlit/secrets.toml
+
+# Environment Variables
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Face Recognition Models (if downloaded locally)
+models/
+checkpoints/
