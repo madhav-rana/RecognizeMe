@@ -23,7 +23,12 @@ h1 {
 h2, h3, h4 {
     font-family: "Climate Crisis", sans-serif !important;
     font-size: 2rem !important;
-    color: black;
+}
+
+.card-title {
+    color: #23263A !important;
+    font-family: "Climate Crisis", sans-serif;
+    margin-bottom: 1rem;
 }
 
 p{
