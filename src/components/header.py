@@ -26,7 +26,7 @@ def header_dashboard():
         f"""
             <div style="display:flex; align-items:center; justify-content:left; gap:20px;">
                 <img src="data:image/png;base64,{LOGO_BASE64}" height="100">
-                <h2 style='text-align:center; color:#5865F2'>RECOGNIZE<br/>ME</h2>
+                <h2 style="text-align:center; color:#5865F2;">RECOGNIZE<br/>ME</h2>
             </div>   
                 
         """, unsafe_allow_html=True)
