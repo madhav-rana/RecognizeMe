@@ -25,7 +25,11 @@ def student_screen():
             st.rerun()
 
     st.write("")
-    st.header("Login with your face ID", text_alignment="center")
+    # st.header("Login with your face ID", text_alignment="center")
+    st.markdown(
+        "<h2 class='card-title' style=text-align:center;>Login with your face ID</h2>",
+        unsafe_allow_html=True
+    )
     st.write("")
 
     photo = st.camera_input("Position your face in the center")

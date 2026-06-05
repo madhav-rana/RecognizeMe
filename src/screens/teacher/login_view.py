@@ -18,7 +18,11 @@ def teacher_login():
             st.rerun()
 
     st.write("")
-    st.header("Login using password", text_alignment="center")
+    # st.header("Login using password", text_alignment="center")
+    st.markdown(
+        "<h2 class='card-title' style=text-align:center;>Login using password</h2>",
+        unsafe_allow_html=True
+    )
     st.write("")
 
     teacher_username = st.text_input("Enter username", key="teacher_username", placeholder="madhavrana")

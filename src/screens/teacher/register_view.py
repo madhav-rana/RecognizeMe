@@ -14,7 +14,13 @@ def teacher_register():
             st.session_state["login_type"] = None
             st.rerun()
 
-    st.header("Register your teacher profile")
+    st.write("")
+    st.write("")
+    # st.header("Register your teacher profile")
+    st.markdown(
+        "<h2 class='card-title' style=text-align:center;>Register your teacher profile</h2>",
+        unsafe_allow_html=True
+    )
     st.write("")
     st.write("")
 
