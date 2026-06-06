@@ -20,12 +20,22 @@ def student_dashboard():
     student_data = st.session_state.student_data
     student_id = student_data['student_id']
 
-    c1, c2 = st.columns(2, vertical_alignment='center', gap='xxlarge')
+    # c1, c2 = st.columns([3,1], vertical_alignment='center', gap='xxlarge')
+    c1, c2 = st.columns([4, 2], vertical_alignment='center', gap='large')
 
     with c1:
         header_dashboard()
     with c2:
-        st.subheader(f"""Welcome, {student_data['name']} """)
+        # st.subheader(f"""Welcome, {student_data['username']} """)
+        name = student_data["name"]
+        st.markdown(
+            f"""
+            <h5 style='text-align:center;'>
+                Hi, {name}
+            </h5>
+            """,
+            unsafe_allow_html=True
+        )
         if st.button("Logout", type='secondary', key='loginbackbtn', shortcut="control+backspace"):
             st.session_state['is_logged_in'] = False
             del st.session_state.student_data 
